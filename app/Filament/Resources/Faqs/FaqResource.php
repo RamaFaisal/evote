@@ -18,9 +18,11 @@ use Filament\Tables\Table;
 
 class FaqResource extends Resource
 {
+    protected static ?string $navigationLabel = "FAQ";
+    protected static ?string $title = 'Pengaturan FAQ';
     protected static ?string $model = Faq::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedQuestionMarkCircle;
 
     protected static ?string $recordTitleAttribute = 'faq';
 

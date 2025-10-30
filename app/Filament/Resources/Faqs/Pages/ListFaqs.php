@@ -8,6 +8,8 @@ use Filament\Resources\Pages\ListRecords;
 
 class ListFaqs extends ListRecords
 {
+    protected static ?string $title = 'Pengaturan FAQ';
+
     protected static string $resource = FaqResource::class;
 
     protected function getHeaderActions(): array
